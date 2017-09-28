@@ -7,16 +7,21 @@ $qt_produto = $_POST['qt_produto'];
 $vl_produto = $_POST['vl_produto'];
 // $im_produto = $_POST['im_produto'];
 //oi mane
+// oi julia 
 // $id = "SELECT id_imagem from tb_produto where ";
 // $sql_busca_img = mysql_query (
 // 	"SELECT imagem from tb_imagem where id_imagem ='".$id."'");
-//
+//oiii
 // $reg = mysql_fetch_assoc($sql_busca_img) or die(mysql_error());
 // $id = $reg['id_imagem'];
 // echo "<script type=\"text/javascript\">
 // alert(\"$reg["'id'"]\");
 // </script>
 // ";
+
+
+// isso aqui e uma mensagem de teste 
+
 
 $update = mysql_query("UPDATE tb_produto SET nm_produto = '$nm_produto',
                                           qt_produto = '$qt_produto',
