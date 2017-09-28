@@ -6,7 +6,7 @@ $nm_produto = $_POST['nm_produto'];
 $qt_produto = $_POST['qt_produto'];
 $vl_produto = $_POST['vl_produto'];
 // $im_produto = $_POST['im_produto'];
-//
+//oi mane
 // $id = "SELECT id_imagem from tb_produto where ";
 // $sql_busca_img = mysql_query (
 // 	"SELECT imagem from tb_imagem where id_imagem ='".$id."'");
