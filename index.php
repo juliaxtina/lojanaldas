@@ -124,7 +124,7 @@ $('#myCarousel').carousel({
             		<div class="col-md-12">
                   <div class="escolha-categoria">
                     <h2 class="text-center"
-                    style="padding-bottom: 25px; padding-left: 15px; padding-top: 25px;">ESCOLHA POR CATEGORIA</h2>
+                    style="padding-bottom: 25px; padding-left: 15px; padding-top: 25px;">ESCOLHA POR CATEGORIA, POR FAVOR, BRUNO</h2>
                             <div id="" class="carousel slide">
                                 <!-- Carousel items -->
                             <div class="carousel-inner">
