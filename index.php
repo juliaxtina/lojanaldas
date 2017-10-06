@@ -44,7 +44,6 @@ $('#myCarousel').carousel({
  <!-- carrinho menu-->
  <?php include("partials/header.php");?>
 <div class="container">
-
 	<div class="row">
 		<!-- Carousel -->
     	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
