@@ -33,7 +33,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <center>
             <div class="logo">
-                <img src="img/logo.png" alt="" class="img-responsive">
+                <a href="index.php"><img src="img/logo.jpg" alt="" class="img-responsive"></a>
             </div>
         </center>
             </div>
