@@ -18,7 +18,8 @@ $cpf = $_POST['cpf'];
 $telefone = $_POST['telefone'];
 $celular = $_POST['celular'];
 $email = $_POST['email'];
-$senha = $_POST['senha'];
+// criptografção em 128 bits usando o sha1 
+$senha = sha1($_POST['senha']);
 //tb endereco
 $cep = $_POST['cep'];
 $numerocasa = $_POST['numerocasa'];
@@ -28,6 +29,25 @@ $cidade = $_POST['nm_cidade'];
 $bairro = $_POST['nm_bairro'];
 $estado = $_POST['nm_uf'];
 $rua = $_POST['endereco'];
+
+
+// validação de email ja existente 
+
+$sql = mysql_query("SELECT * FROM tb_usuario WHERE email = '".$_POST['email']."'");
+if (mysql_num_rows($sql)>=1){
+
+	echo "<meta http-equiv='refresh' content='0; URL=../oculos/cadastro.php'>
+
+	<script type=\"text/javascript\">
+	alert(\"O email  ".$_POST['email']." ja é cadastrado !\");
+	</script>
+	";
+
+	return die;
+} else {
+
+
+
 
 $sql = mysql_query ("INSERT INTO tb_endereco
 	(cep, rua, complemento, referencia, numerocasa, nm_bairro, sg_uf, nm_cidade)
@@ -48,12 +68,22 @@ $sql2 = mysql_query ("INSERT INTO tb_usuario
 		'$email', '$senha')
  	");
 
+
+//$string = '$senha';
+//$codificada = md5($string);
+//echo "Resultado da codificação usando md5: " . $codificada;
+
+
+
+
 // //  if ($sql && $sql2) {
 echo "<script>
 alert('Cadastrado com sucesso!');
 window.history.go(-1);
 </script>";
 header('location:login.php');
+
+} // aqui nessa chave acaba a validação de email ja existente 
  //
 // else {
 // 	"<script>

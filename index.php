@@ -16,9 +16,9 @@
     <meta name="author" content="Julia Cristina, Andresa Rios, Sarah Paiva, Wesley Garcia, Pamela Santos">
     <meta name="keywords" content="roupas, roupa para caes, roupa para animal, animais domesticos">
     <meta http-equiv="content-language" content="pt-br">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-
-    <title>Início teste </title>
+    <title>Início </title>
 
     <?php include ("partials/head.php"); ?>
 
@@ -91,15 +91,15 @@ $('#myCarousel').carousel({
                         </div>
                     </div><!-- /header-text -->
 			    </div>
-			    <!-- <div class="item">
+			     <div class="item">
 			    	<img src="img/slide3.jpg" alt="Third slide">
 			    	<!-- Static Header -->
-                    <!-- <div class="header-text hidden-xs">
+                    <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                           <section style="padding:85px;">
                           </section>
                             <h3>
-                            	<span style="color: #FFF; background-color: #CC0000;">Roupas e acessórios artesanais!</span>
+                            	<span style="color: #FFF; background-color: #CC0000;">Armações e lentes feitas sob medida para você !</span>
                             </h3>
                             <br>
                             <div class="">
@@ -107,7 +107,7 @@ $('#myCarousel').carousel({
                               </div>
                         </div>
                     </div><!-- /header-text -->
-			     <!-- </div> -->
+			      </div>
 			</div>
 			<!-- Controls -->
 			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">

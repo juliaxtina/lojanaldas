@@ -91,7 +91,7 @@
     								<div class="row">
 
     									<div class="col-sm-10">
-    										<h4 class="nomargin">Produtos:</h4>
+    										<h4 class="nomargin">Total de produtos cadastrados  :</h4>
     										<p style="font-size: 20px;"> <?php $total = "SELECT * from vw_produtos" or die (mysql_error());
                               $cont = mysql_query($total);
                               $resultado = mysql_num_rows($cont);

@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Julia Cristina">
-
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Cadastro</title>
 
      <!-- Head include -->

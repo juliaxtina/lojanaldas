@@ -35,7 +35,7 @@
         <!--MENU LATERAL  -->
     <div class="nav-side-menu">
     <div class="brand">
-    <img src="img/logo.png" width="110px;" height="90px;">
+    <a href="index.php"><img src="img/logo.jpg" width="110px;" height="90px;"> </a>
     </div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
