@@ -66,7 +66,7 @@ $('#myModal').on('shown.bs.modal', function () {
 
 
 
-         <strong class="user-name"><?php echo $_SESSION['nome']?> </strong>
+         <strong class="user-name"><?php echo $_SESSION['nome']?> <?php echo $_SESSION['sobrenome']?> </strong>
           <br />
         <small style="padding-left:55px;">
           <a style="cursor: pointer; text-decoration: none; color: #000; font-size:14px;" id="sair-conta" href="index.php"> Sair </a>

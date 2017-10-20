@@ -299,19 +299,38 @@ function v_cadastro(form) {
 }
 
 //validar senhas
-function validarSenha(form){
-  senha = document.getElementById('senha').value;
-  senha2 = document.getElementById('senha2').value;
+// function validarSenha(form){
+//   senha = document.getElementById('senha').value;
+//   senha2 = document.getElementById('senha2').value;
+//
+//   if (senha != senha2){
+//   //   $('#status-msg-senha').tooltip({
+//   //    'trigger': 'manual',    // chamada manual
+//   //    'title': 'Senhas não coincidem, tente novamente',  // texto da tooltip
+//   //    'placement': 'bottom'      // localização da tooltip
+//   //  }).tooltip('show');
+//
+//     $('#status-msg-senha').html("<div class='alert alert' role='alert'><small>senhas não coincidem, tente novamente</small></div>");
+//     return false;
+//   }
+//     // else{
+//     //       document.f1.submit();
+//     //    }
+// }
+var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
 
-  if (senha != senha2){
-
-    $('#status-msg-senha').html("<p style='color: #cc0000;'>Senhas não coincidem, tente novamente.</p>");
-    return false;
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Senhas diferentes!");
+  } else {
+    confirm_password.setCustomValidity('');
   }
-  //   else{
-  //         document.f1.submit();
-  //      }
 }
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
 
 //VALIDAR CPF
 function verificarCPF(c){

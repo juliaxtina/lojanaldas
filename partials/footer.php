@@ -4,16 +4,16 @@
   </section>
   <div class="row">
     <div class="col-lg-12">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul>
           <h4 class="title-footer"> Informações para Contato </h3>
-          <li>Telefone: (13)3487863</li>
-          <li>Email: lojasnaldasmodapet@gmail.com</li>
+          <li>Telefone: (13) 5555-5555</li>
+          <li>Email: Atacadãodospculos@gmail.com</li>
           <li>Horário: Seg - Sex / 9:00 AM - 5:00 PM</li>
 
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul>
           <h4 class="title-footer"> Institucional </h3>
           <li><a href="quem-somos.php">Quem Somos</a></li>
@@ -22,13 +22,20 @@
 
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul>
           <h4 class="title-footer"> Redes Sociais </h3>
-          <li><a href="https://www.facebook.com/naldasmodapet/" target="_blank">Facebook</a></li>
-          <li><a href="https://www.instagram.com/naldaspet/" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Instagram</a></li>
         </ul>
       </div>
+      <div class="col-md-3">
+        <ul>
+          <h4 class="title-footer"> Site Desenvolvido por:</h3>
+          <li><a href="#" target="_blank">CAPSLOCK.INC</a></li>
+        </ul>
+      </div>
+
 
     </div>
   </div>

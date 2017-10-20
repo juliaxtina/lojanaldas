@@ -1,4 +1,4 @@
-
+<title>Pedidos</title>
 <?php include ("partials/menu-adm.php"); ?>
 <?php include ("partials/conexao.php"); ?>
 

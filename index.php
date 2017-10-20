@@ -16,9 +16,9 @@
     <meta name="author" content="Julia Cristina, Andresa Rios, Sarah Paiva, Wesley Garcia, Pamela Santos">
     <meta name="keywords" content="roupas, roupa para caes, roupa para animal, animais domesticos">
     <meta http-equiv="content-language" content="pt-br">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-
-    <title>Início</title>
+    <title>Início </title>
 
     <?php include ("partials/head.php"); ?>
 
@@ -44,6 +44,7 @@ $('#myCarousel').carousel({
  <!-- carrinho menu-->
  <?php include("partials/header.php");?>
 <div class="container">
+
 	<div class="row">
 		<!-- Carousel -->
     	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -63,7 +64,7 @@ $('#myCarousel').carousel({
                             <section style="padding:55px;">
                             </section>
                             <h3>
-                            	<span style="background-color: #cc0000;">Bem-vindo ao Nalda's Moda Pet!</span>
+                            	<span style="background-color: #cc0000;">Bem-vindo ao Atacadao dos Oculos!</span>
                             </h3>
 
                             <div class="">
@@ -81,7 +82,7 @@ $('#myCarousel').carousel({
                             </h2>
                             <br>
                             <h3>
-                            	<span>Cadastre-se e comece as compras do seu animalzinho!</span>
+                            	<span>Cadastre-se e comece as suas compras!</span>
                             </h3>
                             <br>
                             <div class="">
@@ -90,15 +91,15 @@ $('#myCarousel').carousel({
                         </div>
                     </div><!-- /header-text -->
 			    </div>
-			    <!-- <div class="item">
+			     <div class="item">
 			    	<img src="img/slide3.jpg" alt="Third slide">
 			    	<!-- Static Header -->
-                    <!-- <div class="header-text hidden-xs">
+                    <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
                           <section style="padding:85px;">
                           </section>
                             <h3>
-                            	<span style="color: #FFF; background-color: #CC0000;">Roupas e acessórios artesanais!</span>
+                            	<span style="color: #FFF; background-color: #CC0000;">Armações e lentes feitas sob medida para você !</span>
                             </h3>
                             <br>
                             <div class="">
@@ -106,7 +107,7 @@ $('#myCarousel').carousel({
                               </div>
                         </div>
                     </div><!-- /header-text -->
-			     <!-- </div> -->
+			      </div>
 			</div>
 			<!-- Controls -->
 			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -123,7 +124,7 @@ $('#myCarousel').carousel({
             		<div class="col-md-12">
                   <div class="escolha-categoria">
                     <h2 class="text-center"
-                    style="padding-bottom: 25px; padding-left: 15px; padding-top: 25px;">ESCOLHA POR CATEGORIA</h2>
+                    style="padding-bottom: 25px; padding-left: 15px; padding-top: 25px;">ESCOLHA POR CATEGORIA, POR FAVOR, BRUNO</h2>
                             <div id="" class="carousel slide">
                                 <!-- Carousel items -->
                             <div class="carousel-inner">
@@ -132,9 +133,9 @@ $('#myCarousel').carousel({
                             	  <div class="col-md-3">
                                   <a href="vestidos.php" class="thumbnail">
                                   <div class="containa">
-                                    <img class="imaga" src="img/casamento_cachorros_roupas_acessorios-11.png" alt="Image" style="max-width:100%;" />
+                                    <img class="imaga" src="img/armacao.jpg" alt="Image" style="max-width:100%;" />
                                     <div class="middle">
-                                    <div class="text">Vestidos</div>
+                                    <div class="text">Armações</div>
                                     </div>
                                       </div><!--/item-->
                                     </a>
@@ -142,9 +143,9 @@ $('#myCarousel').carousel({
                                   <div class="col-md-3">
                                     <a href="camisetas.php" class="thumbnail">
                                     <div class="containa">
-                                    <img class="imaga" src="img/a74508c0c3b43ac80a88e4f06dbf67ab.jpg" alt="Image" style="max-width:100%;" />
+                                    <img class="imaga" src="img/lentes.png" alt="Image" style="max-width:100%;" />
                                     <div class="middle">
-                                    <div class="text">Camisetas</div>
+                                    <div class="text">Lentes</div>
                                     </div>
                                       </div><!--/item-->
                                     </a>
@@ -153,9 +154,9 @@ $('#myCarousel').carousel({
                                   <div class="col-md-3">
                                     <a href="lacos.php" class="thumbnail">
                                   <div class="containa">
-                                    <img class="imaga" src="img/8463_g.jpg" alt="Image" style="max-width:100%;" />
+                                    <img class="imaga" src="img/transi.png" alt="Image" style="max-width:100%;" />
                                     <div class="middle">
-                                    <div class="text">Laços</div>
+                                    <div class="text">Acessorios</div>
                                     </div>
                                       </div><!--/item-->
                                     </a>
@@ -163,9 +164,9 @@ $('#myCarousel').carousel({
                                 <div class="col-md-3">
                                   <a href="coleiras.php" class="thumbnail" style="text-decoration: none;">
                                     <div class="containa">
-                                    <img class="imaga" src="img/2839_g.jpg" alt="Image" style="max-width:100%;" />
+                                    <img class="imaga" src="img/multifocal.png" alt="Image" style="max-width:100%;" />
                                     <div class="middle">
-                                    <div class="text">Coleiras</div>
+                                    <div class="text">Lentes Multifocais</div>
                                     </div>
                                   </div>
                                   </a>

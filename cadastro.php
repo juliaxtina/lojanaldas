@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Julia Cristina">
-
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Cadastro</title>
 
      <!-- Head include -->
@@ -186,16 +186,16 @@
         <div class="form-group" id="f1" onsubmit="return validarSenha(this);">
           <label class="col-sm-3 control-label">Senha*</label>
           <div class="col-sm-3">
-            <input type="password" class="form-control" name="senha" id="senha" maxlength="50">
+            <input type="password" class="form-control" name="senha" id="password" maxlength="50">
             <!-- <meter value="0" id="mtSenha" max="100"></meter> -->
           </div>
           <label class="col-sm-2 control-label">Confirmar senha*</label>
           <div class="col-sm-3">
-            <input type="password" class="form-control" id="senha2" maxlength="50" >
+            <input type="password" class="form-control" id="confirm_password" maxlength="50" >
           </div>
         </div>
         <div class="col-md-6 col-md-offset-3">
-          <div class="status-msg-senha" id="status-msg-senha">
+          <div class="status-msg-senha" id="status-msg-senha" data-toggle="tooltip" data-placement="bottom" title="Senhas não coincidem, tente novamente">
           </div>
         </div>
 
@@ -211,7 +211,7 @@
         </div>
 
          <div class="col-sm-push-5 col-sm-8">
-          <input type="submit" name="Submit" value="Cadastrar" class="initial2 btn btn-default btn-lg" onClick="validarSenha()">
+          <input type="submit" name="Submit" value="Cadastrar" class="initial2 btn btn-default btn-lg">
         </div>
       </div>
     </div>

@@ -71,25 +71,35 @@ $total_produtos = mysql_num_rows($qr);
                <div class="categorias well">
                <div class="title-categ">
                 <a href="roupas/" title="Roupas">
-                    <p class="lead">Roupas</p>
+                    <p class="lead">Armações</p>
                 </a>
               </div>
                 <div class="list-group">
-                    <a href="camisetas.php" class="list-group-item">Camisetas</a>
-                    <a href="vestidos.php" class="list-group-item"> Vestidos</a>
-                    <a href="moletons.php" class="list-group-item">Moletom</a>
+                    <a href="#" class="list-group-item">Masculino</a>
+                    <a href="#" class="list-group-item"> Feminino</a>
+                    <a href="#" class="list-group-item">Infantil</a>
 
               </div>
               <div class="title-categ">
 
-                <a href="coleiras.php" title="Coleiras">
-                    <a href="coleiras.php"> <p class="lead">Coleiras</p> </a>
+                <a href="#" title="Coleiras">
+                    <a href="coleiras.php"> <p class="lead">Lentes</p> </a>
                 </a>
               </div>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Identificação</a>
-                    <a href="coleiras.php" class="list-group-item"> Coleiras</a>
-                    <a href="#" class="list-group-item">Laços</a>
+                    <a href="#" class="list-group-item">Transitions</a>
+                    <a href="#" class="list-group-item"> Crizal</a>
+                    <a href="#" class="list-group-item">Antireflexo</a>
+                    <a href="#" class="list-group-item">Multifocal</a>
+                </div>
+                <div class="title-categ">
+
+                <a href="#" title="Coleiras">
+                    <a href="#"> <p class="lead">Acessorios</p> </a>
+                </a>
+              </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Limpa Lentes</a>
                 </div>
         </div>
         </div><!-- end.col-md-3-->
@@ -106,13 +116,13 @@ $total_produtos = mysql_num_rows($qr);
                       </ol>
                       <div class="carousel-inner">
                           <div class="item active">
-                              <img class="slide-image" src="img/se.jpg" alt="">
+                              <img class="slide-image" src="img/logo.jpg" alt="">
                           </div>
                           <div class="item">
-                              <img class="slide-image" src="img/de.jpg" alt="">
+                              <img class="slide-image" src="img/slide2.jpg" alt="">
                           </div>
                           <div class="item">
-                              <img class="slide-image" src="img/es.jpg" alt="">
+                              <img class="slide-image" src="img/slide3.jpg" alt="">
                           </div>
                       </div>
 

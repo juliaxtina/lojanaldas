@@ -45,7 +45,7 @@
          <i class="glyphicon glyphicon-user"> </i>
 
 
-           <strong class="user-name"><?php echo $_SESSION['nome']?></strong>
+           <strong class="user-name"><?php echo $_SESSION['nome']?> <?php echo $_SESSION['sobrenome']?></strong>
             <br />
           <small style="padding-left:55px;">
             <a style="cursor: pointer; text-decoration: none; color: #000; font-size:14px;" id="sair-conta" href="logout.php"> Sair </a>

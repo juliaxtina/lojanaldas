@@ -5,6 +5,9 @@
 ?>
     <?php include_once ("conexao.php") ?>
 
+
+   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
 <!-- ::::: HEADER INCLUDE-->
     <div class="header">
          <div class="topbar">
@@ -33,7 +36,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <center>
             <div class="logo">
-                <img src="img/logo.png" alt="" class="img-responsive">
+                <a href="index.php"><img src="img/logo.jpg" alt="" class="img-responsive"></a>
             </div>
         </center>
             </div>
@@ -89,19 +92,23 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="produtos.php?pagina=2"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Roupas <span class="caret"></span></a>
+        <li><a href="produtos.php?pagina=2"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Armações <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="produtos.php?pagina=2">Todos</a></li>
 
-          <li><a href="camisetas.php">Camisetas</a></li>
-          <li><a href="vestidos.php">Vestidos</a></li>
+          <li><a href="camisetas.php">Masculino</a></li>
+          <li><a href="vestidos.php">Feminino</a></li>
+          <li><a href="vestidos.php">Infantil</a></li>
 
           <!-- <li><a href="produtos.php">Verão</a></li> -->
 
         </ul>
-        <li><a href="produtos.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acessórios <span class="caret"></span></a>
+        <li><a href="produtos.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lentes <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="coleiras.php">Coleiras</a></li>
+            <li><a href="coleiras.php">Transitions</a></li>
+            <li><a href="coleiras.php">Cryzal</a></li>
+            <li><a href="coleiras.php">Anti-Reflexo</a></li>
+            <li><a href="coleiras.php">Multifocal</a></li>
 
 
 
