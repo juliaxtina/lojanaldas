@@ -109,9 +109,10 @@ $id = $reg['id_imagem'];
 
 $sql_cadastra = mysql_query (
 	"INSERT INTO tb_produto (id_imagem, nm_produto, qt_produto, vl_produto,
-   ds_produto, ds_especificacoes, nm_categoria, nm_tamanho)
+   ds_produto, ds_especificacoes, nm_categoria)
   VALUES ('$id','$nm_produto', '$qt_produto', '$vl_produto', '$ds_produto',
-    '$ds_especificacoes','$nm_categoria', '$nm_tamanho')");
+    '$ds_especificacoes','$nm_categoria')");
+
 
  ?>
 
