@@ -3,12 +3,18 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 21-Set-2017 às 22:25
+-- Generation Time: 25-Out-2017 às 18:13
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
-create database naldas;
-use naldas;
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `naldas`
@@ -62,7 +68,9 @@ INSERT INTO `tb_endereco` (`cd_end`, `cep`, `rua`, `complemento`, `referencia`, 
 (3, '11713220', 'Rua dos Ipes', NULL, NULL, '544', 'samambaia', 'sp', 'praia grande'),
 (4, '11712200', 'Rua Dois', '', '', '2019', 'Melvi', 'SP', 'Praia Grande'),
 (5, '11713200', 'Rua Lorenzo Fernandez', '', '', '2019', 'Samambaia', 'SP', 'Praia Grande'),
-(6, '11713290', 'Avenida Hermenegildo Pereira de FranÃ§a', '', '', '238', 'Esmeralda', 'SP', 'Praia Grande');
+(6, '11713290', 'Avenida Hermenegildo Pereira de FranÃ§a', '', '', '238', 'Esmeralda', 'SP', 'Praia Grande'),
+(14, '11712300', 'Rua da GraÃ§a', '', '', '2167', 'Melvi', 'SP', 'Praia Grande'),
+(15, '11714200', 'Rua Teodoro Sampaio', '', '', '3891', 'RibeirÃ³polis', 'SP', 'Praia Grande');
 
 -- --------------------------------------------------------
 
@@ -119,7 +127,12 @@ INSERT INTO `tb_imagem` (`id_imagem`, `imagem`) VALUES
 (40, 'foto27.png'),
 (41, 'roupa1.jpg'),
 (42, 'roupa1.jpg'),
-(43, 'foto56.png');
+(43, 'foto56.png'),
+(44, 'soft-cachorro-millie-sport-marinho-01.jp'),
+(45, 'soft-cachorro-millie-sport-marinho-01.jp'),
+(46, 'produto3.jpg'),
+(47, 'cetim-rosa.png'),
+(48, 'produto1.jpg');
 
 -- --------------------------------------------------------
 
@@ -158,7 +171,12 @@ INSERT INTO `tb_itens_pedido` (`id_itens_pedido`, `itens_pedido_id_pedido`, `ite
 (54, 11, 7, 1, 46.00, 100.00),
 (55, 11, 3, 1, 46.00, 100.00),
 (56, 11, 13, 1, 46.00, 81.00),
-(57, 11, 3, 1, 46.00, 81.00);
+(57, 11, 3, 1, 46.00, 81.00),
+(58, 21, 13, 1, 35.00, 35.00),
+(59, 21, 13, 1, 54.00, 135.00),
+(60, 21, 3, 1, 54.00, 135.00),
+(61, 21, 7, 1, 54.00, 135.00),
+(62, 21, 13, 1, 35.00, 35.00);
 
 -- --------------------------------------------------------
 
@@ -189,7 +207,10 @@ INSERT INTO `tb_pedido` (`id_pedido`, `cd_usuario`, `pedido_data`, `pedido_data_
 (17, 1, '2017-06-24', '2017-06-24 02:22:02', 124.00, 0),
 (18, 1, '2017-06-24', '2017-06-24 02:28:53', 85.00, 0),
 (19, 1, '2017-06-24', '2017-06-24 02:48:51', 100.00, 0),
-(20, 1, '2017-06-24', '2017-06-24 03:20:50', 81.00, 0);
+(20, 1, '2017-06-24', '2017-06-24 03:20:50', 81.00, 0),
+(21, 6, '2017-10-06', '2017-10-06 06:19:11', 35.00, 0),
+(22, 6, '2017-10-06', '2017-10-06 06:20:46', 135.00, 0),
+(23, 6, '2017-10-06', '2017-10-06 06:25:33', 35.00, 0);
 
 -- --------------------------------------------------------
 
@@ -229,7 +250,9 @@ INSERT INTO `tb_produto` (`cd_produto`, `id_imagem`, `nm_produto`, `qt_produto`,
 (26, 28, 'Vestido para cachorro', 1, '60.00', '', '', 'vestidos'),
 (28, 30, 'Vestido para cachorro', 1, '60.00', '', '', 'vestidos'),
 (29, 31, 'Vestido para cachorro', 1, '45.00', '', '', 'vestidos'),
-(37, 39, 'Coleira para cachorro azul', 1, '20.00', 'Coleira para cachorro tamanho m', 'AlgodÃ£o', 'coleiras');
+(37, 39, 'Coleira para cachorro azul', 1, '20.00', 'Coleira para cachorro tamanho m', 'AlgodÃ£o', 'coleiras'),
+(41, 47, 'Vestido', 1, '45.00', 'Legal', 'legal', 'casual'),
+(42, 48, 'Vestido', 1, '45.00', 'Legal', 'legal', 'casual');
 
 -- --------------------------------------------------------
 
@@ -261,7 +284,9 @@ INSERT INTO `tb_usuario` (`cd_usuario`, `cd_end`, `nome`, `sobrenome`, `sexo`, `
 (3, 3, 'Josefa Pantaleao ', 'Santos', 'fem', '1972-02-02', '74486737180', '(13)3467787', '', 'josefa_santos@gmail.com', '12344'),
 (4, 4, 'Francisco', 'Suarez', 'masc', '1998-05-09', '61971827347', '(13)8728275', '', 'suarezfranc@gmail.com', 'senha'),
 (5, 5, 'Gertrudes', 'do Nascimento', 'fem', '1998-01-01', '36612344121', '(13)8787276', '', 'gertrudesnasc@gmail.com', 'senhaa'),
-(6, 6, 'veronica', 'Ribeiro', 'fem', '0000-00-00', '45723270842', '(13)3477347', '(13)98188708', 'veronicaribeiro-s@hotmail.com', 'q1w2e3r4t5');
+(6, 6, 'veronica', 'Ribeiro', 'fem', '0000-00-00', '45723270842', '(13)3477347', '(13)98188708', 'veronicaribeiro-s@hotmail.com', 'q1w2e3r4t5'),
+(14, 14, 'Ariosvaldo', 'Gomes', 'masc', '0000-00-00', '82905671203', '(13)3412412', '', 'ariosvaldogomes@hotmail.com', 'd6fca25667bbbc35bb83d8818d5ccdef8bc2379c'),
+(15, 15, 'Giraldo', 'alves', 'masc', '0000-00-00', '41353742121', '(13)3989338', '', 'giraldo@hotmail.com', '6c144321c49f1d6f4d9859a4aaa7896f05d9855d');
 
 -- --------------------------------------------------------
 
@@ -355,32 +380,32 @@ ALTER TABLE `adm_log`
 -- AUTO_INCREMENT for table `tb_endereco`
 --
 ALTER TABLE `tb_endereco`
-  MODIFY `cd_end` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `cd_end` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `tb_imagem`
 --
 ALTER TABLE `tb_imagem`
-  MODIFY `id_imagem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id_imagem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 --
 -- AUTO_INCREMENT for table `tb_itens_pedido`
 --
 ALTER TABLE `tb_itens_pedido`
-  MODIFY `id_itens_pedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id_itens_pedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 --
 -- AUTO_INCREMENT for table `tb_pedido`
 --
 ALTER TABLE `tb_pedido`
-  MODIFY `id_pedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_pedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
 -- AUTO_INCREMENT for table `tb_produto`
 --
 ALTER TABLE `tb_produto`
-  MODIFY `cd_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `cd_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 --
 -- AUTO_INCREMENT for table `tb_usuario`
 --
 ALTER TABLE `tb_usuario`
-  MODIFY `cd_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `cd_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- Constraints for dumped tables
 --
